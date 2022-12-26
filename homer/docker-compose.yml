@@ -1,0 +1,11 @@
+version: "3"
+services:
+  homer:
+    image: b4bz/homer
+    container_name: homer
+    volumes:
+      - /home/kyivpolygo/homer/assets/:/www/assets
+    environment:
+      - UID=1000
+      - GID=1000
+    restart: unless-stopped

@@ -1,0 +1,87 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v5/search for icons options
+
+title: "KYIV POLYGO"
+subtitle: "A collection of tools and services."
+logo: "../assets/icons/apple-touch-icon.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: false
+
+stylesheet:
+  - "assets/custom.css"
+columns: "3" # You can change this to any number that is a factor of 12: (1, 2, 3, 4, 6, 12)
+
+defaults:
+  layout: list # Either 'columns', or 'list'
+  colorTheme: dark
+
+# Optional theme customization
+colors:
+  light:
+    highlight-primary: "#fff5f2"
+    highlight-secondary: "#fff5f2"
+    highlight-hover: "#bebebe"
+    background: "#12152B"
+    card-background: "rgba(255, 245, 242, 0.8)"
+    text: "#ffffff"
+    text-header: "#fafafa"
+    text-title: "#000000"
+    text-subtitle: "#111111"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#3273dc"
+    link-hover: "#2e4053"
+    background-image: "../assets/wallpaper-light.jpeg" # Change wallpaper.jpeg to the name of your own custom wallpaper!
+  dark:
+    highlight-primary: "#181C3A"
+    highlight-secondary: "#181C3A"
+    highlight-hover: "#1F2347"
+    background: "#12152B"
+    card-background: "rgba(24, 28, 58, 0.8)"
+    text: "#eaeaea"
+    text-header: "#7C71DD"
+    text-title: "#fafafa"
+    text-subtitle: "#8B8D9C"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#c1c1c1"
+    link-hover: "#fafafa"
+    background-image: "../assets/wallpaper.jpeg"
+
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Applications"
+    icon: "fas fa-server"
+    items:
+      - name: "Code Server"
+        logo: "assets/tools/code.png"
+        subtitle: "VSCode Online Server [DO]"
+        keywords: "visual studio code server do digitalocean"
+        url: "https://code.ieljit.lol"
+      - name: "GiTea"
+        logo: "assets/tools/gitea.png"
+        subtitle: "Self-hosted git server. GiTea"
+        keywords: "git gittea code"
+        url: "https://git.ieljit.lol"
+      - name: "Proxy Manager"
+        logo: "assets/tools/nginx.png"
+        subtitle: "Manage Proxies from web."
+        keywords: ["proxy", "nginx", "manager"]
+        url: "https://server.ieljit.lol"
+      - name: "Portainer"
+        logo: "assets/tools/portainer.png"
+        subtitle: "Manage Docker Containers from web."
+        keywords: ["docker", "portainer", "manager"]
+        url: "https://port.ieljit.lol"
+  - name: "Online"
+    icon: "fas fa-cloud"
+    items:
+      - name: "GitHub"
+        logo: "assets/tools/github.png"
+        subtitle: "Open GitHub"
+        keywords: "git github hub"
+        url: "https://github.com/voxelin"
